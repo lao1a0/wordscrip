@@ -37,6 +37,6 @@ https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/B03AE3CN?pid=dsa&style=1&share
 
 # 编程思路
 - 将所有的词编辑成excel格式，方便python处理
-- 整理一下词语的格式，提取出每一个词语，然后百度查意思
+- 整理一下词语的格式，用正则提取中文词语，然后百度查意思
 - 得到结果后写入一个新的excel
 
