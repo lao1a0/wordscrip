@@ -12,7 +12,7 @@ from lxml import etree
 import requests
 import urllib
 import re
-API ='ec7a527f928982c5'
+API ='5ad8766465d53597'
 def formats(str):
     pattern = re.compile(r'<[^>]+>',re.S)
     if str !=None:
@@ -49,7 +49,8 @@ def get_explain_for_each_word(excel_file_name):
                     jin =req['result']['jin']
                     fan =req['result']['fan']
                     word_list.append([name,pinyi,basiccontent,content,example,comefrom,english,jin,fan])
-            # break
+            else:
+                word_list.append([zh,"","","","","","","",""])
     return word_list
 
 def return_to_excel(day,dir):
