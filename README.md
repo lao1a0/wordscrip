@@ -43,7 +43,7 @@ https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/B03AE3CN?pid=dsa&style=1&share
 # 2.0方法使用介绍
 1.将API改成自己的
 
-2.其他跟上一个一样，每人每天只有100次免费的
+2.其他跟上一个一样，每人每天只有100次免费的，因为调用api比较慢，等到出现“Finsh”就好了
 ![img4](https://github.com/thinkforanameissohard/wordscrip/blob/main/img/4.png?raw=true)
 
 
