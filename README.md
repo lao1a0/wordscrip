@@ -1,16 +1,21 @@
 # wordscrip
 # 需要安装的依赖
-pip install xlrd
-
-pip install  xlwt
-
-pip install  lxml 
-
-pip install  requests
-
-pip install  urllib
-
-pip install  re
+- pip install xlrd
+- pip install  xlwt
+- pip install  lxml 
+- pip install  requests
+- pip install  urllib
+- pip install  re
+# 要查的文件
+### 第1-20天
+https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/E04B87CN?pid=dsa&style=1&share_link_style=0
+### 第21-40天
+https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/641C3ACN?pid=dsa&style=1&share_link_style=0
+### 第41-60天
+https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/4238DACN?pid=dsa&style=1&share_link_style=0
+### 第61-80天
+https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/786258CN?pid=dsa&style=1&share_link_style=0
+### 第81-100天
 
 # 使用方法
 1.用全能扫描王扫描出来进行ORC识别
