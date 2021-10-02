@@ -1,4 +1,9 @@
 # wordscrip
+# 编程思路
+完成此任务，你需要学习正则语法，xpath语法，爬虫，python操作excel
+- 将所有的词编辑成excel格式，方便python处理
+- 整理一下词语的格式，用正则提取中文词语，然后百度查意思
+- 得到结果后写入一个新的excel
 # 需要安装的依赖
 - pip install xlrd
 - pip install  xlwt
@@ -19,7 +24,7 @@ https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/786258CN?pid=dsa&style=1&share
 https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/B03AE3CN?pid=dsa&style=1&share_link_style=0
 
 # 使用方法
-1.用全能扫描王扫描出来进行ORC识别（用其他的OCR识别也行）
+1.用全能扫描王扫描出来进行OCR识别（用其他的OCR识别也行）
 
 2.整理识别出来的文档，每个词一行，把他们放入excel表格中，我这里命名为"1.xlsx"
 
