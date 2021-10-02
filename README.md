@@ -16,6 +16,7 @@ https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/4238DACN?pid=dsa&style=1&share
 ### 第61-80天
 https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/786258CN?pid=dsa&style=1&share_link_style=0
 ### 第81-100天
+https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/B03AE3CN?pid=dsa&style=1&share_link_style=0
 
 # 使用方法
 1.用全能扫描王扫描出来进行ORC识别（用其他的OCR识别也行）
