@@ -2,6 +2,7 @@
 @Time : 2021-10-02 11:31
 @Author : laolao
 @FileName: lao.py
+查词来源：百度汉语
 '''
 import xlrd
 import xlwt
