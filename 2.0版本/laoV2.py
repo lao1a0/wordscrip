@@ -82,7 +82,7 @@ def return_to_excel(day,dir):
     workbook.save('第{}天.xls'.format(day))
 if __name__ == '__main__':
     dir = get_explain_for_each_word('1.xlsx')
-    print(dir)
+    # print(dir)
     # word,meaning,source_url
     return_to_excel(100,dir)
     print(">>Finish")
