@@ -23,7 +23,7 @@ https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/786258CN?pid=dsa&style=1&share
 ### 第81-100天 - chen
 https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/B03AE3CN?pid=dsa&style=1&share_link_style=0
 
-# 使用方法
+# 1.0使用方法介绍
 1.用全能扫描王扫描出来进行OCR识别（用其他的OCR识别也行）
 
 2.整理识别出来的文档，每个词一行，把他们放入excel表格中，我这里命名为"1.xlsx"
@@ -40,7 +40,7 @@ https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/B03AE3CN?pid=dsa&style=1&share
 
 ![img3](https://github.com/thinkforanameissohard/wordscrip/blob/main/img/3.png?raw=true)
 
-# 2.0方法使用介绍
+# 2.0使用方法介绍
 1.将API改成自己的
 
 2.其他跟上一个一样，每人每天只有100次免费的，因为调用api比较慢，等到出现“>>Finish”就好了，学弟学妹们可以积极探索找到另外的api来作为弥补😋
