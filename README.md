@@ -47,6 +47,10 @@ https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/B03AE3CN?pid=dsa&style=1&share
 
 ![img4](https://github.com/thinkforanameissohard/wordscrip/blob/main/img/4.png?raw=true)
 
+# 3.0还没写完
+目前是一个自动的OCR识别
+
+新的api免费不限量：https://hanyuapp.baidu.com/dictapp/swan/getzicidetail?wd=%E9%80%9A%E7%89%92
 
 
 
