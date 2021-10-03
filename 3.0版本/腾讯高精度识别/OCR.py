@@ -40,7 +40,7 @@ def OCR():
             image = "data:image/jpeg;base64," + s
         #调用腾讯云api服务进行ocr识别
         try:
-            cred = credential.Credential("AKIDNXSELDoQQCg4ADptZx5wMWcldFTjfqni", "oLcc5GAyf46mESZUL7ankQpxoVP8ML6Q")
+            cred = credential.Credential("你的Secretid", "你的SecretKey")
             httpProfile = HttpProfile()
             httpProfile.endpoint = "ocr.tencentcloudapi.com"
 
