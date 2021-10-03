@@ -1,0 +1,1 @@
+ pip install --upgrade tencentcloud-sdk-python -i https://pypi.tuna.tsinghua.edu.cn/simple
