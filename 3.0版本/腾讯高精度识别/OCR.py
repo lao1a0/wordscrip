@@ -1,11 +1,4 @@
-#! /usr/bin/env python3
-# -*- coding:utf-8 -*-
 
-# Author   : almightyzhao
-# Date     : 2021-10-03
-# Name     : Python调用腾讯api通用印刷体识别（高精度版）
-# Software : VScode
-# Note     : 帮助宇宝儿完成郑老师留的任务orz，还有教学弟学妹。。。写这脚本不是有手就行，不用教的。。。
 
 import os
 import re
@@ -47,7 +40,7 @@ def OCR():
             image = "data:image/jpeg;base64," + s
         #调用腾讯云api服务进行ocr识别
         try:
-            cred = credential.Credential("AKIDNXSELDoQQCg4ADptZx5wMWcldFTjfqni", "oLcc5GAyf46mESZUL7ankQpxoVP8ML6Q")
+            cred = credential.Credential("你的Secretid", "你的SecretKey")
             httpProfile = HttpProfile()
             httpProfile.endpoint = "ocr.tencentcloudapi.com"
 
