@@ -10,6 +10,12 @@ from lxml import etree
 import requests
 import urllib
 import re
+from docx import Document
+from docx.shared import Pt, Cm
+from docx.shared import Inches
+from docx.oxml.ns import qn
+from docx import Document
+from docx.enum.section import WD_ORIENTATION, WD_SECTION_START
 
 def get_explain_for_each_word(excel_file_name):
     '''
@@ -41,6 +47,12 @@ def get_explain_for_each_word(excel_file_name):
     return word_list
 
 def return_to_excel(day,dir):
+    '''
+    结果输入出到excel
+    :param day:
+    :param dir:
+    :return:
+    '''
     workbook = xlwt.Workbook(encoding = 'utf-8')
     worksheet = workbook.add_sheet("sheet1")
     # 参数对应 行, 列, 值
@@ -56,6 +68,9 @@ def return_to_excel(day,dir):
         worksheet.write(i,2, label =source_url)
         i+=1
     workbook.save('第{}天.xls'.format(day))
+
+
+
 if __name__ == '__main__':
    dir = get_explain_for_each_word('1.xlsx')
    # word,meaning,source_url

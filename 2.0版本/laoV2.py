@@ -6,6 +6,13 @@
 '''
 import json
 
+import dns
+from docx import Document
+from docx.shared import Pt, Cm
+from docx.shared import Inches
+from docx.oxml.ns import qn
+from docx import Document
+from docx.enum.section import WD_ORIENT
 import xlrd
 import xlwt
 from lxml import etree
@@ -81,9 +88,56 @@ def return_to_excel(day,dir):
         worksheet.write(i,8, label =fan)
         i+=1
     workbook.save('第{}天.xls'.format(day))
+def return_to_docx(day,dir):
+        '''
+        结果输入到word里面
+        :param day:
+        :param dir:
+        :return:
+        '''
+        #打开文档，设置格式
+        document = Document()
+        section = document.sections[0]
+        # 横向
+        new_width, new_height = section.page_height, section.page_width
+        section.orientation = WD_ORIENT.LANDSCAPE
+        section.page_width = new_width
+        section.page_height = new_height
+        # 窄
+        section.top_margin=Cm(1.27)
+        section.bottom_margin=Cm(1.27)
+        section.left_margin=Cm(1.27)
+        section.right_margin=Cm(1.27)
+        #加入不同等级的标题
+        document.add_heading(u'第{}天'.format(day),1) # 一级标题
+        document.styles['Normal'].font.name = u'宋体'
+        document.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), u'宋体')
+        document.styles['Normal'].font.size = Pt(12)
+        for d in dir:
+            name,pinyi,basiccontent,content,example,comefrom,english,jin,fan = d
+            document.add_heading(u'{}（{}）{}'.format(name,pinyi,english).format(day),2) # 二级标题
+            document.add_paragraph().add_run(u'[基本解释]')
+            document.add_paragraph().add_run(u'{}'.format(basiccontent))
+            document.add_paragraph().add_run(u'[内容]')
+            document.add_paragraph().add_run(u'{}'.format(content))
+            document.add_paragraph().add_run(u'[例句]')
+            document.add_paragraph().add_run(u'{}'.format(example))
+            document.add_paragraph().add_run(u'[来源]')
+            if comefrom !=None:
+                document.add_paragraph().add_run(u'{}'.format(comefrom))
+            else:
+                document.add_paragraph().add_run(u'{}'.format(''))
+            document.add_paragraph().add_run(u'[近义词]')
+            document.add_paragraph().add_run(u'{}'.format(jin))
+            document.add_paragraph().add_run(u'[反义词]')
+            document.add_paragraph().add_run(u'{}'.format(fan))
+
+        #增加分页
+        document.add_page_break()
+        #保存文件
+        document.save(u'第{}天.docx'.format(day))
+
 if __name__ == '__main__':
     dir = get_explain_for_each_word('1.xlsx')
-    # print(dir)
-    # word,meaning,source_url
-    return_to_excel(100,dir)
+    return_to_docx(100,dir)
     print(">>Finish")
