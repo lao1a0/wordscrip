@@ -112,7 +112,7 @@ def return_to_docx(day,dir):
         document.add_heading(u'第{}天'.format(day),1) # 一级标题
         document.styles['Normal'].font.name = u'宋体'
         document.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), u'宋体')
-        document.styles['Normal'].font.size = Pt(12)
+        document.styles['Normal'].font.size = Pt(14)
         for d in dir:
             name,pinyi,basiccontent,content,example,comefrom,english,jin,fan = d
             document.add_heading(u'{}（{}）{}'.format(name,pinyi,english).format(day),2) # 二级标题
