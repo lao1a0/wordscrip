@@ -53,7 +53,7 @@ https://www.camscanner.com/s/MHg0NWFkZjZhYQ%3D%3D/B03AE3CN?pid=dsa&style=1&share
 新的api免费不限量：https://hanyuapp.baidu.com/dictapp/swan/getzicidetail?wd=%E9%80%9A%E7%89%92
 
 # 2.1更新
-在原来2.0版本的基础上更新，将原来的输出excel改为了word
+在原来2.0版本的基础上更新，将原来的输出excel改为了word，可以正式使用了
 
 
 
